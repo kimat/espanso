@@ -8,6 +8,7 @@ have many problems making it work on others.
 
 * [Ubuntu/Debian](#installing-on-ubuntu--debian)
 * [Manjaro/Arch](#installing-on-manjaro--arch)
+* [Nix/NixOS](#installing-on-nix--nixos)
 
 #### Wayland support
 
@@ -180,3 +181,10 @@ If you now type `:espanso` in any text field, you should see "Hi there!" appear!
 > **Note**: after executing the previous command, espanso will prompt the user to register a Systemd service. This is needed to automatically start espanso at system startup.
 
 At this point, you are ready to read the [Getting Started](/docs/get-started/) tutorial.
+
+
+### Installing on Nix / NixOS
+
+Espanso is currently available on the [nixos-unstable-small channel](https://github.com/NixOS/nixpkgs-channels/tree/nixos-unstable-small).
+
+There is no [service](https://nixos.org/nixos/manual/index.html#sec-systemctl) available for NixOS yet and `espanso install` won't work; so you'll have to run espanso using `espanso daemon`.
